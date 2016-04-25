@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:elevation="@dimen/cardview_default_elevation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_card"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_to"
+                android:layout_alignParentLeft="true"
+                tools:text="To: Tarik Sahni"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_id"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
+                tools:text="2"
+                android:textColor="@android:color/white"
+                android:paddingRight="4dp"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/item_time"
+            android:textStyle="italic"
+            android:textColor="@android:color/darker_gray"
+            tools:text="12 June 2016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/item_des"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/background_dark"
+            tools:text="chup reh yr"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
